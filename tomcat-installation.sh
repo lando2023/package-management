@@ -2,7 +2,7 @@
 # TOMCAT.SH
 # Steps for installing tomcat9 on rhel7&8
 # install Java JDK 1.8+ as a prerequisite for tomcat to run
-# https://github.com/lando2023/package-management.git
+# https://github.com/lando2023/package-management/tree/main
 sudo hostnamectl set-hostname tomcat
 cd /opt
 sudo yum install git wget vim -y
