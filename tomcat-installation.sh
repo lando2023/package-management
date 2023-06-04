@@ -21,3 +21,12 @@ sudo ln -s /opt/tomcat10/bin/startup.sh /usr/bin/starttomcat
 sudo starttomcat
 echo “end on tomcat installation”
 sudo su – ec2-user
+#======================
+
+#tomcat server configuration:
+find / -name server.xml context.xml
+vim /opt/tomcat10/conf/server.xml
+vi /opt/tomcat10/webapps/manager/META-INF/context.xml
+vi /opt/tomcat10/conf/tomcat-user.xml 
+# to add user
+<user username="lando2023" password="admin" roles="manager-gui,admin-gui">
